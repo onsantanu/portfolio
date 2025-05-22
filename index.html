@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AI Portfolio & Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font to the entire body */
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+        /* Custom padding for sections to ensure consistent spacing */
+        .section-padding {
+            padding-top: 4rem; /* Equivalent to py-16 or py-64px */
+            padding-bottom: 4rem;
+        }
+        /* Initial state for project cards before animation */
+        .project-card {
+            opacity: 0; /* Hidden initially */
+            transform: translateY(20px); /* Slightly moved down */
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition */
+        }
+        /* State when project card animates into view */
+        .project-card.animate-in {
+            opacity: 1; /* Fully visible */
+            transform: translateY(0); /* Returns to original position */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <section id="hero" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white flex items-center justify-center min-h-screen section-padding">
+        <div class="text-center max-w-4xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-4 rounded-lg">Hello, I'm a Developer Transitioning to AI!</h1>
+            <p class="text-xl md:text-2xl mb-8 leading-relaxed rounded-lg">
+                With a solid background in software development, I'm now focusing my passion and skills on the exciting world of Artificial Intelligence and Machine Learning.
+            </p>
+            <a href="#portfolio" class="bg-white text-blue-600 hover:bg-blue-100 px-8 py-3 rounded-full text-lg font-semibold transition duration-300 shadow-lg rounded-lg">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="bg-white section-padding">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 rounded-lg">About Me & Resume</h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 rounded-lg">Summary</h3>
+                    <p class="text-lg leading-relaxed rounded-lg">
+                        I am a dedicated software developer with a strong foundation in building robust web applications. My career journey has led me to explore and immerse myself in the field of AI, where I am eager to apply my problem-solving abilities and programming expertise to develop intelligent solutions. I am passionate about continuous learning and contributing to innovative projects.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4 rounded-lg">Skills</h3>
+                    <div class="mb-6">
+                        <h4 class="text-xl font-medium mb-2 rounded-lg">Programming Languages:</h4>
+                        <p class="text-lg rounded-lg">Python, JavaScript, GO, TypeScript, SQL</p>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-xl font-medium mb-2 rounded-lg">AI/ML Frameworks:</h4>
+                        <p class="text-lg rounded-lg">TensorFlow, PyTorch, Scikit-learn, OpenCV</p>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-medium mb-2 rounded-lg">Tools & Technologies:</h4>
+                        <p class="text-lg rounded-lg">Git, Docker, AWS, Angular, Node.js, Pandas, NumPy</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-semibold mb-6 text-center rounded-lg">Work Experience</h3>
+                <div class="mb-8 p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-1 rounded-lg">Whizsoul Consulting Pvt. Ltd., Senior Software Developer</h4>
+                    <p class="text-gray-600 mb-3 rounded-lg">Jun, 2020 – Present</p>
+                    <ul class="list-disc list-inside text-lg space-y-2">
+                        <li>Built and designed full applications and databases.</li>
+                        <li>Led teams to perform better and work faster.</li>
+                        <li>Communicated with clients to understand requirements and deliver on time.</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-100 rounded-lg shadow-md">
+                    <h4 class="text-xl font-semibold mb-1 rounded-lg">Manhattan Tech Venture Pvt. Ltd., Junior Web Developer</h4>
+                    <p class="text-gray-600 mb-3 rounded-lg">Oct, 2018 – Jun, 2020</p>
+                    <ul class="list-disc list-inside text-lg space-y-2">
+                        <li>Made responsive and modular code in Angular to make apps faster.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <h3 class="text-2xl font-semibold mb-4 rounded-lg">Education</h3>
+                <p class="text-xl rounded-lg">MCA, Chandigarh University | 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-gray-100 section-padding">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 rounded-lg">My Portfolio</h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg project-card">
+                    <img src="https://placehold.co/600x400/E0F2F7/000000?text=AI+Chatbot+Project" alt="AI Chatbot Project Screenshot" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 rounded-lg">Intelligent Chatbot Assistant</h3>
+                    <p class="text-gray-700 mb-3 rounded-lg">Developed a conversational AI chatbot capable of handling customer inquiries and providing personalized recommendations. My role involved designing the NLU model and integrating with various APIs.</p>
+                    <p class="text-sm text-gray-500 mb-4 rounded-lg">Technologies: Python, TensorFlow, Flask, Natural Language Processing</p>
+                    <div class="flex space-x-4">
+                        <a href="https://demo.example.com/chatbot" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">Live Demo</a>
+                        <a href="https://github.com/yourusername/chatbot-repo" target="_blank" class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition duration-300">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg project-card">
+                    <img src="https://placehold.co/600x400/E0F2F7/000000?text=Image+Recognition+App" alt="Image Recognition App Screenshot" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 rounded-lg">Real-time Image Recognition App</h3>
+                    <p class="text-gray-700 mb-3 rounded-lg">Built an application that identifies objects in real-time using computer vision. I focused on optimizing the model for faster inference and deploying it on a web interface.</p>
+                    <p class="text-sm text-gray-500 mb-4 rounded-lg">Technologies: Python, PyTorch, OpenCV, FastAPI</p>
+                    <div class="flex space-x-4">
+                        <a href="https://demo.example.com/image-recognition" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">Live Demo</a>
+                        <a href="https://github.com/yourusername/image-recognition-repo" target="_blank" class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition duration-300">GitHub</a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg project-card">
+                    <img src="https://placehold.co/600x400/E0F2F7/000000?text=Data+Analysis+Dashboard" alt="Data Analysis Dashboard Screenshot" class="rounded-md mb-4 w-full h-48 object-cover">
+                    <h3 class="text-2xl font-semibold mb-2 rounded-lg">Predictive Analytics Dashboard</h3>
+                    <p class="text-gray-700 mb-3 rounded-lg">Designed and implemented a dashboard visualizing predictive analytics for business trends. My contribution involved data preprocessing, model selection, and dashboard development.</p>
+                    <p class="text-sm text-gray-500 mb-4 rounded-lg">Technologies: Python, Scikit-learn, Pandas, Plotly, Streamlit</p>
+                    <div class="flex space-x-4">
+                        <a href="https://demo.example.com/dashboard" target="_blank" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition duration-300">Live Demo</a>
+                        <a href="https://github.com/yourusername/dashboard-repo" target="_blank" class="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition duration-300">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-white section-padding">
+        <div class="max-w-2xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-8 rounded-lg">Get in Touch</h2>
+            <p class="text-xl mb-8 rounded-lg">I'm always open to new opportunities and collaborations in AI. Feel free to reach out!</p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:your.email@example.com" class="text-blue-600 hover:text-blue-800 transition duration-300 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    <span class="sr-only">Email</span>
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-blue-600 hover:text-blue-800 transition duration-300 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+                <a href="https://github.com/yourusername" target="_blank" class="text-gray-700 hover:text-gray-900 transition duration-300 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.44-.78-3.46 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2a.239.239 0 0 0-.78 3.46c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                    <span class="sr-only">GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for scroll-based animations
+        document.addEventListener('DOMContentLoaded', () => {
+            // Select all elements with the 'project-card' class
+            const projectCards = document.querySelectorAll('.project-card');
+
+            // Create a new Intersection Observer instance
+            const observer = new IntersectionObserver((entries, observer) => {
+                // Iterate over each entry (observed element)
+                entries.forEach(entry => {
+                    // If the element is currently intersecting (in view)
+                    if (entry.isIntersecting) {
+                        // Add the 'animate-in' class to trigger the CSS animation
+                        entry.target.classList.add('animate-in');
+                        // Stop observing the element once it has animated
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.2 // Trigger when 20% of the item is visible in the viewport
+            });
+
+            // Observe each project card
+            projectCards.forEach(card => {
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
